@@ -16,11 +16,27 @@ class StudentAGH extends Student{
 	private int numberOfCars;
 	
 	public void doEntertainment(){
-		System.out.println("Bawi siê 7h");
+		System.out.println("Bawi siï¿½ 7h");
 	}
 	
 	public void doHomework(){
 		System.out.println("Pracuje 1h");
+	}
+	
+	class StudentIB extends StudentAGH implements Magician{
+		public void doMagic(){
+			System.out.println("Czaruje");
+		}
+	}
+	
+	// Dodane 20.04:
+	
+	public static void main(String[] args){
+		Student s = new Student();
+		s.doHomework();
+		StudentAGH agh = new StudentAGH();
+		agh.doEntertainment();
+		agh.doHomework();
 	}
 }
 
