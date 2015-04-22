@@ -16,10 +16,11 @@ class StudentAGH extends Student{
 	private int numberOfCars;
 	
 	public void doEntertainment(){
-		System.out.println("Bawi si� 7h");
+		System.out.println("Bawi się 7h");
 	}
 	
 	public void doHomework(){
+		this.doEntertainment();
 		System.out.println("Pracuje 1h");
 	}
 	
@@ -37,6 +38,7 @@ class StudentAGH extends Student{
 		StudentAGH agh = new StudentAGH();
 		agh.doEntertainment();
 		agh.doHomework();
+
 	}
 }
 

@@ -4,7 +4,7 @@ public class AGH {
 
 	public final static int ESTABLISHED=1919;
 	public String name;
-	public static String rector="Tadeusz S³omka";
+	public static String rector="Tadeusz SÅ‚omka";
 	
 	public void showName(){
 		System.out.println(name);
